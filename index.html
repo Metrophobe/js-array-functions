@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array Functions</title>
+    <script src="array.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>JS Array Functions</h1>
+    <p> Common JS Functions to be used for common tasks that every developer should be aware of.</p>
+    <h2>Map</h2> 
+    <p>Used to map a particular operation on every element in your array </p>
+    <H3>Syntax</H3>
+    <code>array.map((element,index) => {
+         //function using element and index
+         } </code>  
+    <h3>Example</h3>
+    <p>given an array containing....</p>
+    <div class="array"></div>
+    <p>applying map on the array to multiply every element by 2 gives...</p>
+    <div class="map"></div>
+
+    <h2>Find</h2> 
+    <p>Used to find an element that satisfies the condition in the arrow function true...  </p>
+    <H3>Syntax</H3>
+    <code>item = array.findIndex((e)=>{//condition of your choice});</code>  
+    <h3>Example</h3>
+    <p>given an array containing....</p>
+    <div class="array"></div>
+    <p>applying find for that number > 8 in the array gives ... </p>
+    <div class="find"></div>
+
+    <h2>Find Index</h2> 
+    <p>Used to find an element's index that satisfies the condition in the arrow function true...  </p>
+    <H3>Syntax</H3>
+    <code>index = array.findIndex((e)=>{//condition of your choice});</code>  
+    <h3>Example</h3>
+    <p>given an array containing....</p>
+    <div class="array"></div>
+    <p>applying findIndex for that number > 8 in the array gives an index of ... </p>
+    <div class="findIndex"></div>
+
+    <h2>Filter</h2> 
+    <p>Returns an array based on the filter operation of your choice ...  </p>
+    <H3>Syntax</H3>
+    <code>filteredArray = array.filter(e => {
+         //function of your choice
+         }) </code>  
+    <h3>Example</h3>
+    <p>given an array containing....</p>
+    <div class="array"></div>
+    <p>applying map on the array to multiply every element by 2 gives...</p>
+    <div class="filter"></div>
+
+    <h2>Reduce</h2> 
+    <p>Used to reduce the contents of an array to one number based on an elementwise operation of your choice </p>
+    <H3>Syntax</H3>
+    <code>array.reduce((accumulator, currentValue) => {//operation of your choice })</code>  
+    <h3>Example</h3>
+    <p>given an array containing....</p>
+    <div class="array"></div>
+    <p>assuming we want to calculate the cumulative sum of all the elements, the reduce function produces... </p>
+    <div class="reduce"></div>
+
+    <h2>Concat</h2> 
+    <p>mergest two arrays together and returns a new copy  </p>
+    <H3>Syntax</H3>
+    <code>result = array.concat(secondArray); </code>  
+    <h3>Example</h3>
+    <p>given an array containing....</p>
+    <div class="array"></div>
+    <p>and another array containing....</p>
+    <div class="second"></div>
+    <p>the merged concat result gives ....</p>
+    <div class="concat"></div>
+
+    <h2>Slice</h2> 
+    <p>Creates a shallow copy of an array based on the start index and the count ...  </p>
+    <H3>Syntax</H3>
+    <code>newArray = array.slice(start,count);</code>  
+    <h3>Example</h3>
+    <p>given an array containing....</p>
+    <div class="array"></div>
+    <p>inserting an start index of 1 and a count of 9 gives....</p>
+    <div class="slice"></div>
+
+    <h2>Splice</h2> 
+    <p>Modifies the contents of an array by removing / replacing elements within it... it outputs the deleted items as an array and modifies the original array. </p>
+    <H3>Syntax</H3>
+    <code>deletedItemsArray = array.splice(start,deleteCount,arraytoInsert);</code>  
+    <h3>Example</h3>
+    <p>given an array containing....</p>
+    <div class="array"></div>
+    <p>we will remove the first 5 numbers and replace them with 5,4,3,2,1.Applying the splice method... with a start position of 0, a delete count of 5 and an array containing [5,4,3,2,1], the splice method returns what was deleted as an array ....</p>
+    <div class="deleted"></div>
+    <p>... and the modified array looks as follows....</p>
+    <div class="splice"></div>
+</body>
+</html>

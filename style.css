@@ -1,0 +1,27 @@
+body{
+    background-color: #101;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    margin:1em;
+}
+
+h1{
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+h2{
+    font-size: 1.5vw;
+    background-color: #123;
+    padding:1em;
+}
+
+code {
+    border: 1px solid #333;
+    display: block;
+    padding:1em;
+}
+
+
+
